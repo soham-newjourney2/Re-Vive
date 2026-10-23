@@ -92,8 +92,10 @@ function renderNavbar(role, activeId) {
 
     if (!signedIn) {
         const action = activeId === 'login'
-            ? `<a href="#/welcome" class="btn btn-secondary btn-sm public-nav-action">← Choose a role</a>`
-            : `<a href="#/login" class="btn btn-primary btn-sm public-nav-action">Sign in</a>`;
+            ? `<a href="#/roles" class="btn btn-secondary btn-sm public-nav-action">← Choose a role</a>`
+            : activeId === 'roles'
+                ? `<a href="#/welcome" class="btn btn-secondary btn-sm public-nav-action">← Back to home</a>`
+                : `<a href="#/roles" class="btn btn-primary btn-sm public-nav-action">Sign in</a>`;
         return `
         <header class="navbar top-navbar public-navbar" id="navbar">
             ${brand}
