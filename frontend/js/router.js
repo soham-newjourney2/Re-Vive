@@ -75,6 +75,11 @@ registerRoute('/welcome', () => {
     initWelcomePage();
 });
 
+registerRoute('/roles', () => {
+    if (api.isAuthenticated()) { const user = api.getUser(); redirectToDashboard(user.role); return; }
+    initDemoRolesPage();
+});
+
 registerRoute('/login', () => {
     if (api.isAuthenticated()) {
         const user = api.getUser();
@@ -218,4 +223,6 @@ function initRouter() {
 }
 
 document.addEventListener('DOMContentLoaded', initRouter);
+
+
 
