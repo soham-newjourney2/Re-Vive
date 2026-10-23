@@ -39,7 +39,7 @@ function initWelcomePage() {
                 </nav>
                 <div class="home-header-actions">
                     ${renderThemeToggle()}
-                    <a href="#/login" class="home-signin">Sign In <span aria-hidden="true">→</span></a>
+                    <a href="#/roles" class="home-signin">Sign In <span aria-hidden="true">→</span></a>
                     <button class="home-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" onclick="toggleHomeMenu(this)"><span></span><span></span><span></span></button>
                 </div>
             </header>
@@ -86,7 +86,7 @@ function initWelcomePage() {
                             <li><span>✓</span> Patients check in and track progress</li>
                             <li><span>✓</span> Guardians follow progress where authorised</li>
                         </ul>
-                        <a href="#/login" class="home-text-link">Access your platform <span>→</span></a>
+                        <a href="#/roles" class="home-text-link">Access your platform <span>→</span></a>
                     </div>
                     <div class="home-dashboard-preview" aria-label="Illustrative RE:VIVE dashboard preview">
                         <div class="home-dashboard-top"><span class="home-mini-brand"><img src="assets/revive-ribbon-r-transparent.png" alt=""/> RE:VIVE</span><span class="home-preview-status"><i></i> Connected care</span></div>
@@ -111,7 +111,7 @@ function initWelcomePage() {
                 <section class="home-about" id="about"><div><span class="home-eyebrow"><i></i> BUILT AROUND PEOPLE</span><h2>Technology should support care —<br><span>not get in its way.</span></h2></div><p>From daily check-ins to coordinated follow-up, RE:VIVE helps bring the recovery story together so care teams can focus on the person behind the data.</p></section>
                 <section class="home-contact" id="contact" aria-labelledby="contact-heading">
                     <div class="home-contact-intro"><span class="home-eyebrow"><i></i> WE'RE HERE TO HELP</span><h2 id="contact-heading">Let's connect<br><span>around better care.</span></h2><p>Have a question about the RE:VIVE demo or need help finding the right place to start? Choose the route that fits your needs.</p>
-                        <div class="home-contact-options"><a href="#/login"><span>↗</span><span><strong>Account access</strong><small>Sign in to your workspace or choose a demo role.</small></span></a><div><span>♡</span><span><strong>Patient support</strong><small>For care questions, contact your assigned healthcare team.</small></span></div><div><span>✉</span><span><strong>Project enquiries</strong><small>Use your team's official project contact channel.</small></span></div></div>
+                        <div class="home-contact-options"><a href="#/roles"><span>↗</span><span><strong>Account access</strong><small>Sign in to your workspace or choose a demo role.</small></span></a><div><span>♡</span><span><strong>Patient support</strong><small>For care questions, contact your assigned healthcare team.</small></span></div><div><span>✉</span><span><strong>Project enquiries</strong><small>Use your team's official project contact channel.</small></span></div></div>
                     </div>
                     <div class="home-contact-card"><h3>Send a message</h3><p>This demo form checks your message locally. It is not connected to a message-delivery service yet.</p>
                         <form id="homeContactForm" class="home-contact-form">
